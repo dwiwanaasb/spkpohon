@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  background-color: #f6f8fd;
+}
+
+ul {
+  list-style: none;
+}
+
+.area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.area .sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  -webkit-box-shadow: 1px 0 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.area .sidebar .title {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+}
+
+.area .sidebar .list ul li {
+  margin-bottom: 18px;
+}
+
+.area .sidebar .list ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #646464;
+  font-size: 16px;
+  padding: 12px 10px;
+  margin: 0 10px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.area .sidebar .list ul li a img {
+  margin-right: 8px;
+  width: 20px;
+}
+
+.area .sidebar .list ul a.active,
+.area .sidebar .list ul a:hover {
+  border-radius: 24px;
+  background-color: #198754;
+  color: white;
+}
+
+.area .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f6f8fd;
+  margin-left: 20%;
+}
+
+.area .content .navbar {
+  padding: 12px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.area .content .navbar .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.area .content .navbar .home button {
+  all: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #198754;
+  color: white;
+  background-color: red;
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.area .content .navbar .home button img {
+  width: 20px;
+  color: #646464;
+  margin-right: 6px;
+}
+
+.area .content .navbar .home button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.area .content .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 120px;
+  margin: 0 30px;
+  padding: 60px 0 20px 0;
+}
+
+.area .content .header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.area .content .header .title label {
+  color: #646464;
+  font-size: 14px;
+}
+
+.area .content .header .title h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.area .content .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 30px 60px 30px;
+}
+
+.area .content .detail .container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.area .content .detail .container .ubahAlternatif {
+  width: 50%;
+  margin-top: 30px;
+}
+
+.area .content .detail .container button#btn-update,
+.area .content .detail .container button#btn-refresh {
+  margin-top: 20px;
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+  padding: 16px 12px;
+  border: 0;
+  outline: 0;
+  border-radius: 32px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 16px;
+}
+
+.area .content .detail .container button#btn-update:hover,
+.area .content .detail .container button#btn-refresh:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.area .content .detail .container button#btn-refresh {
+  background-color: orangered;
+}
+
+.area .content .detail .container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.area .content .detail .container .title h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.area .content .detail .container .title label {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.area .content .detail .container .title label:hover {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.area .content .detail .container .title .overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.area .content .detail .container .title .overlay .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.area .content .detail .container .title .overlay .title h3 {
+  color: white;
+  font-size: 28px;
+}
+
+.area .content .detail .container .title .overlay .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  width: 500px;
+  border-radius: 18px;
+}
+
+.area .content .detail .container .title .overlay .content div {
+  background-color: white;
+  padding: 20px;
+}
+
+.area .content .detail .container .title .overlay .content div p {
+  text-align: justify;
+}
+
+.area .content .detail .container .title .overlay .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 500px;
+  opacity: 0;
+}
+
+.area .content .detail .container .title .overlay .text .close {
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.area .content .detail .container .title .overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.area .content .detail .container .title .overlay:target .text {
+  -webkit-animation: slideLeftFade 0.5s 0.1s forwards;
+          animation: slideLeftFade 0.5s 0.1s forwards;
+}
+
+.area .content .detail .container table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 14px;
+}
+
+.area .content .detail .container table th {
+  font-weight: 700;
+  font-size: 18px;
+  height: 60px;
+  padding: 10px 14px;
+  border-bottom: 1.2px solid #cecece;
+  text-align: center;
+}
+
+.area .content .detail .container table td {
+  font-size: 16px;
+  padding: 10px 14px;
+  color: #646464;
+  border-bottom: 0.1px solid #cecece;
+  text-align: left;
+}
+
+.area .content .detail .container table td input[type='radio'] {
+  margin-right: 10px;
+}
+
+.area .content .detail .container table td input.labelKriteria {
+  border: none;
+  font-size: 16px;
+}
+
+.area .content .detail .container table td input {
+  border: none;
+  border: 1.5px solid #198754;
+  outline: none;
+  outline: #198754;
+  padding: 2px 2px 2px 10px;
+  color: black;
+}
+
+.area .content .detail .container table td select#listKepentingan {
+  width: 80%;
+}
+
+.area .content .detail .container table td.textLeft {
+  text-align: left;
+}
+
+.area .content .detail .container table td.inputField {
+  text-align: center;
+}
+
+.area .content .detail .container table td.inputField select {
+  width: 70%;
+}
+
+.area .content .detail .container .btn-simpan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.area .content .detail .container .btn-simpan button {
+  all: unset;
+  padding: 12px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.area .content .detail .container .btn-simpan button[name='reset'] {
+  background-color: red;
+  margin-right: 10px;
+}
+
+.area .content .detail .container .btn-simpan button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.area .content .detail .container.half {
+  width: 50%;
+}
+
+@-webkit-keyframes zoomFade {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomFade {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    margin-top: -200px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    margin-top: -200px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@-webkit-keyframes slideLeftFade {
+  0% {
+    opacity: 0;
+    margin-right: -30px;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+
+@keyframes slideLeftFade {
+  0% {
+    opacity: 0;
+    margin-right: -30px;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=styleAhpWaspas.css.map */

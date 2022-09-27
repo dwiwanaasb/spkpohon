@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  background-color: #f6f8fd;
+}
+
+ul {
+  list-style: none;
+}
+
+.area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.area .sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  -webkit-box-shadow: 1px 0 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.area .sidebar .title {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+}
+
+.area .sidebar .list ul li {
+  margin-bottom: 18px;
+}
+
+.area .sidebar .list ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #646464;
+  font-size: 16px;
+  padding: 12px 10px;
+  margin: 0 10px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.area .sidebar .list ul li a img {
+  margin-right: 8px;
+  width: 20px;
+}
+
+.area .sidebar .list ul a.active,
+.area .sidebar .list ul a:hover {
+  border-radius: 24px;
+  background-color: #198754;
+  color: white;
+}
+
+.area .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f6f8fd;
+  margin-left: 20%;
+}
+
+.area .content .navbar {
+  padding: 12px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.area .content .navbar .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.area .content .navbar .home button {
+  all: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #198754;
+  color: white;
+  background-color: red;
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.area .content .navbar .home button img {
+  width: 20px;
+  color: #646464;
+  margin-right: 6px;
+}
+
+.area .content .navbar .home button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.area .content .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 30px;
+  padding: 60px 0 20px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.area .content .header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.area .content .header .title h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.area .content .detail {
+  margin: 20px 30px 60px 30px;
+}
+
+.area .content .detail .addArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.area .content .detail .addArea form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 40%;
+  height: 50px;
+}
+
+.area .content .detail .addArea form img {
+  position: absolute;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.area .content .detail .addArea form input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-left: 50px;
+  border-radius: 28px;
+  -webkit-box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.area .content .detail .addArea form button {
+  all: unset;
+  padding: 0 12px;
+  background-color: grey;
+  color: white;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  font-weight: 700;
+}
+
+.area .content .detail .addArea form button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.area .content .detail .addArea button {
+  all: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: blue;
+  color: white;
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 16px 10px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.area .content .detail .addArea button a {
+  color: white;
+}
+
+.area .content .detail .addArea button i {
+  font-size: 18px;
+  margin-top: -3px;
+  margin-right: 6px;
+  font-weight: 700;
+}
+
+.area .content .detail .addArea button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.area .content .detail .tableArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0;
+}
+
+.area .content .detail .tableArea table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.area .content .detail .tableArea table th {
+  background-color: #198754;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  height: 60px;
+  padding: 10px 12px;
+}
+
+.area .content .detail .tableArea table td {
+  font-size: 16px;
+  padding: 12px 14px;
+  color: #646464;
+}
+
+.area .content .detail .tableArea table td button {
+  all: unset;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 4px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  font-weight: 700;
+}
+
+.area .content .detail .tableArea table td button i {
+  color: white;
+}
+
+.area .content .detail .tableArea table td button.detail {
+  background-color: lightslategray;
+}
+
+.area .content .detail .tableArea table td button.update {
+  background-color: orange;
+}
+
+.area .content .detail .tableArea table td button.delete {
+  background-color: red;
+}
+
+.area .content .detail .tableArea table td button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.area .content .detail .tableArea table td .overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.area .content .detail .tableArea table td .overlay .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.area .content .detail .tableArea table td .overlay .title h3 {
+  color: white;
+  font-size: 28px;
+}
+
+.area .content .detail .tableArea table td .overlay .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  width: 500px;
+  border-radius: 18px;
+}
+
+.area .content .detail .tableArea table td .overlay .content div {
+  background-color: white;
+  padding: 20px;
+}
+
+.area .content .detail .tableArea table td .overlay .content div p {
+  text-align: justify;
+}
+
+.area .content .detail .tableArea table td .overlay .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 500px;
+  opacity: 0;
+}
+
+.area .content .detail .tableArea table td .overlay .text .close {
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.area .content .detail .tableArea table td .overlay .image img {
+  width: 400px;
+}
+
+.area .content .detail .tableArea table td .overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.area .content .detail .tableArea table td .overlay:target .text {
+  -webkit-animation: slideLeftFade 0.5s 0.1s forwards;
+          animation: slideLeftFade 0.5s 0.1s forwards;
+}
+
+.area .content .detail .tableArea table td .overlay:target img {
+  -webkit-animation: zoomFade 1.5s 0.8s forwards;
+          animation: zoomFade 1.5s 0.8s forwards;
+}
+
+.area .content .detail .tableArea table td.no {
+  width: 10%;
+}
+
+.area .content .detail .tableArea table td.item {
+  width: 30%;
+}
+
+.area .content .detail .tableArea table td.item2 {
+  width: 20%;
+}
+
+.area .content .detail .tableArea table td.latin {
+  font-style: italic;
+}
+
+.area .content .detail .tableArea table tr:nth-child(odd) {
+  background-color: #f3f3f3;
+}
+
+.area .content .detail .tableArea table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.area .content .detail .paginition {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.area .content .detail .paginition .list {
+  border: 1px solid #b4b4b4;
+  padding: 4px 10px;
+}
+
+.area .content .detail .paginition .active {
+  background-color: blue;
+  font-weight: 700;
+  color: white;
+}
+
+@-webkit-keyframes zoomFade {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomFade {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    margin-top: -200px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    margin-top: -200px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@-webkit-keyframes slideLeftFade {
+  0% {
+    opacity: 0;
+    margin-right: -30px;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+
+@keyframes slideLeftFade {
+  0% {
+    opacity: 0;
+    margin-right: -30px;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=styleDataPohonKriteria.css.map */
